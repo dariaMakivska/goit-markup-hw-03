@@ -44,11 +44,19 @@ img {
   margin-left: auto;
   margin-right: auto;
 }
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.title {
+  margin-bottom: 10px;
+}
 
 /*START HEADER*/
 .header {
   padding-top: 24px;
   padding-bottom: 24px;
+  border-bottom: 1px solid #ececec;
 }
 .header-container {
   display: flex;
@@ -124,21 +132,19 @@ img {
 
 /*START MAIN SECTION*/
 .main {
-  display: flex;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.main-section {
-  background-color: var(--background-color-text);
-  heihght: 600px;
-}
-.main {
   padding-top: 200px;
   padding-bottom: 200px;
 }
 
+.main-section {
+  background-color: var(--background-color-text);
+  height: 600px;
+}
+
 .primary-title {
+  margin-left: 252px;
+  margin-right: 252px;
+  width: 696px;
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -149,6 +155,9 @@ img {
   text-align: center;
 }
 .modal-btn {
+  display: block;
+  margin-left: 500px;
+  margin-right: 500px;
   min-width: 200px;
   padding: 10px 16px;
   border: 1px solid var(--acent-color);
@@ -165,6 +174,14 @@ img {
 .modal-btn:hover,
 .modal-btn:focus {
   background-color: var(--background-color-btn-colored);
+}
+.decisions-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.decisions-item {
+  width: 270px;
 }
 .decisions-title {
   font-weight: 700;
@@ -188,10 +205,25 @@ img {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  margin-bottom: 50px;
 }
+.about-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .about-team {
   background-color: #f5f4fa;
 }
+.team-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.workers-list:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -205,17 +237,25 @@ img {
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
 }
+
 /*END MAIN SECTION*/
 
 /*START FOOTER*/
 .section-footer {
   background-color: var(--background-color-text);
+  padding-top: 60px;
+  padding-bottom: 60px;
+  padding-left: 15px;
 }
 .footer-logo {
   color: var(--light-color);
 }
 .adress-list {
+  margin-top: 20px;
   font-style: normal;
+}
+.footer-list:not(:last-child) {
+  margin-bottom: 9px;
 }
 
 .adress-link {
@@ -240,6 +280,12 @@ img {
 /*====================PORTFOLIO================*/
 
 /*START MAIN SECTION Portfolio*/
+.portfolio-btn-list {
+  display: flex;
+  margin-bottom: 34px;
+  margin-right: 294px;
+  margin-left: 294px;
+}
 .btn-list {
   font-family: inherit;
   font-weight: 500;
@@ -249,6 +295,12 @@ img {
   color: var(--primary-text-color);
   background-color: var(--background-color-bnt-light);
   cursor: pointer;
+  border-radius: 4px;
+  border: 1px solid var(--background-color-bnt-light);
+  padding: 6px 12px;
+}
+.portfolio-list:not(:last-child) {
+  margin-right: 8px;
 }
 .btn-list:hover,
 .btn-list:focus {
@@ -256,12 +308,29 @@ img {
   background-color: var(--acent-color);
   color: var(--light-color);
 }
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.examples {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+.examples-title-text {
+  padding: 20px 24px;
+  border-right: 1px solid #eeeeee;
+  border-left: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
+}
 .examples-title {
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
   color: var(--primary-text-color);
+  margin-bottom: 4px;
 }
 .examples-text {
   font-size: 16px;
