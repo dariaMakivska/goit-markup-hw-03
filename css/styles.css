@@ -30,8 +30,9 @@ ul {
 }
 img {
   display: block;
+  height: auto;
 }
-.list {
+ul {
   list-style: none;
 }
 .link {
@@ -50,6 +51,19 @@ img {
 }
 .title {
   margin-bottom: 10px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 /*START HEADER*/
@@ -131,14 +145,10 @@ img {
 /*END HEADER*/
 
 /*START MAIN SECTION*/
-.main {
-  padding-top: 200px;
-  padding-bottom: 200px;
-}
-
 .main-section {
   background-color: var(--background-color-text);
-  height: 600px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .primary-title {
@@ -177,9 +187,11 @@ img {
 }
 .decisions-list {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
+.decisions-item:not(:last-child) {
+  margin-right: 30px;
+}
+
 .decisions-item {
   width: 270px;
 }
@@ -196,6 +208,9 @@ img {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--tittle-text-color);
+}
+.about {
+  padding-top: 0;
 }
 .about-title,
 .about-team-title {
@@ -223,7 +238,11 @@ img {
 .workers-list:not(:nth-child(4n)) {
   margin-right: 30px;
 }
-
+.workers-title {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  text-align: center;
+}
 .team-title {
   font-weight: 500;
   font-size: 16px;
@@ -249,7 +268,13 @@ img {
 }
 .footer-logo {
   color: var(--light-color);
+  font-family: var(--secondary-font-family);
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
 }
+
 .adress-list {
   margin-top: 20px;
   font-style: normal;
@@ -282,9 +307,8 @@ img {
 /*START MAIN SECTION Portfolio*/
 .portfolio-btn-list {
   display: flex;
-  margin-bottom: 34px;
-  margin-right: 294px;
-  margin-left: 294px;
+  margin-bottom: 50px;
+  justify-content: center;
 }
 .btn-list {
   font-family: inherit;
